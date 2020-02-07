@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyManagerController">
+   <children>
+      <Text fill="#bf1b29" layoutX="162.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPLOYEE INFORMATION" textAlignment="CENTER" wrappingWidth="287.58642578125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#1b27b5" layoutX="21.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" />
+      <Text fill="#1b27b5" layoutX="21.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Middle Initial" />
+      <Text fill="#1b27b5" layoutX="21.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
+      <Text fill="#1b27b5" layoutX="21.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SSN" />
+      <TextField fx:id="firstName_input" layoutX="107.0" layoutY="56.0" promptText="Enter First Name" />
+      <TextField fx:id="middleInitial_input" layoutX="107.0" layoutY="93.0" prefHeight="27.0" prefWidth="37.0" promptText="MI" />
+      <TextField fx:id="lastName_input" layoutX="107.0" layoutY="130.0" promptText="Enter Last Name" />
+      <TextField fx:id="ssn_input" layoutX="107.0" layoutY="166.0" promptText="Enter SSN" />
+      <TextField fx:id="birthDate_input" layoutX="107.0" layoutY="204.0" promptText="DD-MM-YY" />
+      <Text fill="#1b27b5" layoutX="20.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birthdate" />
+      <Text fill="#1b27b5" layoutX="21.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+      <Text fill="#1b27b5" layoutX="21.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sex" />
+      <TextField fx:id="salary_input" layoutX="107.0" layoutY="319.0" promptText="Enter Salary" />
+      <TextField fx:id="superSsn_input" layoutX="124.0" layoutY="355.0" prefHeight="27.0" prefWidth="150.0" promptText="Enter Supervisor SSN" />
+      <Text fill="#1b27b5" layoutX="21.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supervisor SSN" />
+      <Text fill="#1b27b5" layoutX="22.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary" />
+      <ComboBox fx:id="departmentNumber_comboBox" layoutX="157.0" layoutY="392.0" prefHeight="27.0" prefWidth="103.0" promptText="SELECT" />
+      <Text fill="#1b27b5" layoutX="21.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department number" />
+      <ComboBox fx:id="projects_comboBox" layoutX="364.0" layoutY="85.0" prefWidth="150.0" promptText="PROJECT" />
+      <TextField fx:id="projectHours_input" layoutX="531.0" layoutY="85.0" prefHeight="27.0" prefWidth="44.0" />
+      <Text fill="#919e22" layoutX="528.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" HOURS" wrappingWidth="50.7177734375" />
+      <Text fill="#919e22" layoutX="364.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign a project:" />
+      <Button fx:id="assignProject_button" layoutX="367.0" layoutY="122.0" mnemonicParsing="false" text="ASSIGN" />
+      <Button fx:id="removeEmployeeProject_button" layoutX="517.0" layoutY="122.0" mnemonicParsing="false" text="REMOVE" />
+      <Text fill="#0c8d14" layoutX="363.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Employee has any dependents?" />
+      <CheckBox fx:id="dependent_yes" layoutX="368.0" layoutY="179.0" mnemonicParsing="false" text="YES" />
+      <CheckBox fx:id="dependent_no" layoutX="440.0" layoutY="179.0" mnemonicParsing="false" text="NO" />
+      <Text fill="#0c8d14" layoutX="364.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Dependent's First Name" />
+      <TextField fx:id="dependentFirstName_input" layoutX="366.0" layoutY="218.0" promptText="Enter First Name" />
+      <Text fill="#0c8d14" layoutX="365.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sex" />
+      <Text fill="#0c8d14" layoutX="365.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birth Date" />
+      <TextField fx:id="dependentBdate_input" layoutX="433.0" layoutY="282.0" prefHeight="27.0" prefWidth="130.0" promptText="DD-MM-YY" />
+      <Text fill="#0c8d14" layoutX="363.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Relationship" />
+      <TextField fx:id="dependentRelationship_input" layoutX="449.0" layoutY="319.0" prefHeight="27.0" prefWidth="130.0" promptText="Enter Relationship" />
+      <Button fx:id="addDependent_button" layoutX="370.0" layoutY="355.0" mnemonicParsing="false" text="ADD DEPENDENT" />
+      <TextArea fx:id="database_output" layoutX="267.0" layoutY="388.0" prefHeight="109.0" prefWidth="328.0" />
+      <TextField fx:id="address_input" layoutX="107.0" layoutY="243.0" promptText="Enter Address" />
+      <Button fx:id="addEmployee_button" layoutX="83.0" layoutY="443.0" mnemonicParsing="false" text="INSERT EMPLOYEE" />
+      <TextField fx:id="sex_input" layoutX="107.0" layoutY="282.0" promptText="Enter either M or F" />
+      <TextField fx:id="dependentSex_input" layoutX="401.0" layoutY="250.0" promptText="Enter either M or F" />
+      <Button fx:id="scan_button" layoutX="449.0" layoutY="122.0" mnemonicParsing="false" text="SCAN" />
+   </children>
+</AnchorPane>

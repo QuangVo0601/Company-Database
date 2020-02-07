@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="249.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyGUIController">
+   <children>
+      <Button fx:id="loginButton" layoutX="120.0" layoutY="111.0" mnemonicParsing="false" onAction="#checkValidSsn" text="LOGIN" />
+      <TextField fx:id="managerSSN" layoutX="120.0" layoutY="65.0" promptText="Enter your SSN" />
+      <Button fx:id="resetButton" layoutX="228.0" layoutY="111.0" mnemonicParsing="false" onAction="#reset" text="RESET" />
+   </children>
+</AnchorPane>
